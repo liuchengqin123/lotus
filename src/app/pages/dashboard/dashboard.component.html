@@ -1,0 +1,114 @@
+<div class="lotus">
+  <div class="search">
+    <div class="search-wrap">
+      <form class="search-form">
+        <mat-form-field appearance="outline" class="form-field">
+          <input type="text" placeholder="请输入" matInput/>
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+  <div class="miner-list">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title >
+            <span class="panel-title">
+              Miner:
+            </span>
+            f03144
+          </mat-panel-title>
+          <mat-panel-description >
+            <span class="panel-description">Byte Power: </span> 2.193 PiB / 581.5 PiB (0.3772%)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-divider></mat-divider>
+        <div class="miner-detail">
+          <div class="detail-item">
+            <div>
+              <span class="item-title" matBadge="1" [matBadgePosition]="badgePosition" matBadgeColor="primary">Actual</span>
+              <div class="item-indentation"><span class="item-indentation-style">Power: </span> 2.19 PiB / 581 pi (0.3772%)</div>
+              <div class="item-indentation"><span class="item-indentation-style">Committed: </span>2.196 PiB</div>
+              <div class="item-indentation"><span class="item-indentation-style">Proving: </span>2.196 PiB (2.625 TiB Faulty, 0.11%)</div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="item-title" matBadge="2" [matBadgePosition]="badgePosition" matBadgeColor="primary">
+              Expected block win rate:
+            </span>54.3168/day ( every 26m30s)
+          </div>
+          <div class="detail-item">
+            <div>
+              <span class="item-title" matBadge="3" [matBadgePosition]="badgePosition" matBadgeColor="primary">
+                Details:
+              </span>
+              436,57.26 GiB
+              <div class="item-indentation"><span class="item-indentation-style">Active: </span> 230,16.39 GiB</div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div>
+              <span class="item-title" matBadge="4" [matBadgePosition]="badgePosition" matBadgeColor="warn">Sectors: </span>
+              <div class="item-indentation"><span class="item-indentation-style">DoPreCommit2: </span>12</div>
+              <div class="item-indentation"><span class="item-indentation-style">DoPreCommit1: </span>2</div>
+              <div class="item-indentation"><span class="item-indentation-style">Total: </span>72936</div>
+              <div class="item-indentation"><span class="item-indentation-style">DoCommit2: </span>24</div>
+              <div class="item-indentation"><span class="item-indentation-style">DoCommit1: </span>4</div>
+              <div class="item-indentation"><span class="item-indentation-style">Proving: </span>72873</div>
+              <div class="item-indentation" matTooltip="点击右边按钮获取更多信息" style="display: flex">
+                <span class="item-indentation-style warn inline-show">FailedUnrecoverable: </span>
+                <span class="inline-show">21</span>
+                <span class="inline-show">
+                  <a routerLink="/minerInfo">
+                    <mat-icon >forward</mat-icon>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <div class="work-list">
+    <span class="work-list-title">矿工列表</span>
+    <mat-divider></mat-divider>
+    <mat-list class="list-wrap">
+      <mat-list-item class="w-list-item" matRipple matRippleColor="#F0FF57">
+        <div class="w-item-href" >
+          <div class="item-href-1" >No</div>
+          <div class="w-item-name item-href-1">worker id</div>
+          <div class="w-item-sector item-href-1">sector</div>
+        </div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class="w-list-item" matRipple matRippleColor="#F0FF57">
+        <a class="w-item-href" routerLink="/minerInfo" matTooltip="点击获取更多信息" [matTooltipPosition]="position.value">
+          <div class="badge item-href-1" matBadge="1"  [matBadgePosition]="badgePosition" matBadgeColor="accent"></div>
+          <div class="w-item-name item-href-1">f134979</div>
+          <div class="w-item-sector item-href-1">1231</div>
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class="w-list-item" matRipple matRippleColor="#F0FF57">
+        <a class="w-item-href" routerLink="/minerInfo" matTooltip="点击获取更多信息" [matTooltipPosition]="position.value">
+          <div class="badge item-href-1" matBadge="2"  [matBadgePosition]="badgePosition" matBadgeColor="accent"></div>
+          <div class="w-item-name item-href-1">f134979</div>
+          <div class="w-item-sector item-href-1">1231</div>
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class="w-list-item" matRipple matRippleColor="#F0FF57">
+        <a class="w-item-href" routerLink="/minerInfo" matTooltip="点击获取更多信息" [matTooltipPosition]="position.value">
+          <div class="badge item-href-1" matBadge="3"  [matBadgePosition]="badgePosition" matBadgeColor="accent"></div>
+          <div class="w-item-name item-href-1">f134979 </div>
+          <div class="w-item-sector item-href-1">1231</div>
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </div>
+</div>
+
+
